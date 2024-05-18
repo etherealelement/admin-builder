@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,8 +14,10 @@
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "drizzle-orm": "^0.30.10",
     "lucide-react": "^0.378.0",
     "next": "14.2.3",
+    "postgres": "^3.4.4",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.3.0",
@@ -24,6 +28,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "drizzle-kit": "^0.21.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
