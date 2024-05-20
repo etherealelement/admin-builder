@@ -13,7 +13,7 @@ type SelectField = {
 	type: 'select';
 	name: string;
 	title: string;
-	options?: Options[];
+	options: Options[];
 };
 
 export type AdminBuilderField = TextField | SelectField;
