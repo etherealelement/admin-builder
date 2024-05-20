@@ -14,14 +14,19 @@ export const AdminDbEntityBuilderContainer = mergeContainers([
 	DbClientContainer,
 	ConfigContainer,
 ]);
+
 export const AdminServerEntityBuilderContainer = mergeContainers([
 	DbClientContainer,
 	ConfigContainer,
-]);
+]).extend<{
+	userAction: unknown;
+}>('AdminServerEntityBuilderContainer');
+
 export const AdminActionBuilderContainer = mergeContainers([
 	DbClientContainer,
 	ConfigContainer,
 ]);
+
 export const AdminClientEntityBuilderContainer = mergeContainers([
 	ConfigContainer,
 ]);
