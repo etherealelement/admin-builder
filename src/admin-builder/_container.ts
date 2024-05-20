@@ -22,4 +22,6 @@ export const AdminActionBuilderContainer = mergeContainers([
 	DbClientContainer,
 	ConfigContainer,
 ]);
-export const AdminClientBuilderContainer = mergeContainers([ConfigContainer]);
+export const AdminClientEntityBuilderContainer = mergeContainers([
+	ConfigContainer,
+]);
